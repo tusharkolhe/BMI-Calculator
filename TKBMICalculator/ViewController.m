@@ -81,8 +81,22 @@
     } completion:^(BOOL finished) {
         
     }];
-    
-    
+    if (bmiString.intValue<=18.4) {
+        _bmiResultLabel.text=@"Ohh You need to increase your Weight";
+    }
+    else if (bmiString.intValue>=18.4 &&   bmiString.intValue<=24.9) {
+        _bmiResultLabel.text=@"Congrats its Normal!!";
+    }
+    else if (bmiString.intValue>=25 &&   bmiString.intValue<=29.9) {
+        _bmiResultLabel.text=@"Ohh You are Overweight!!";
+    }
+
+    else if (bmiString.intValue>=30 &&   bmiString.intValue<=39.9) {
+        _bmiResultLabel.text=@"Ohh You are Obese!!";
+    }
+    else if ( bmiString.intValue>=39.9) {
+        _bmiResultLabel.text=@"Ohh you are over Obese!!";
+    }
 
 }
 @end

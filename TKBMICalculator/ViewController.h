@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *hightTextField;
 @property (weak, nonatomic) IBOutlet UITextField *weightTextField;
 - (IBAction)calculateBMIButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *bmiResultLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *bmiLabel;
 @property (weak, nonatomic) IBOutlet UISlider *bmiSlider;
